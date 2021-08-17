@@ -1,0 +1,85 @@
+{% extends "layout.njk" %}
+
+
+    {% block head %}
+    
+    
+        <title>Conteúdos - Rocketseat</title>
+        <link rel="icon" href="https://raw.githubusercontent.com/rocketseat-education/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    {% endblock%}
+    
+
+        
+    {% block content %}
+
+        <section id="Post-area">
+            <h2>Top 3 posts</h2>
+
+            <div id="cards-area">
+                <div class="card" id="dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida">
+                   <div class="img-content">
+                       <img src="https://blog.rocketseat.com.br/content/images/2020/10/dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida.jpg" alt="">
+                   </div>
+                   
+                    <div class="title-post">
+                        <p>Dark Mode com CSS — mudando a aparência do Blog de maneira simples e rápida</p>
+                    </div>
+
+                    <div class="info-post">
+                        <p class="autor">Por: Thiago Marinho</p>
+                        <p class="reading-time">3 Min de leitura </p>
+                    </div>
+                </div>
+
+                <div class="card" id="upload-de-imagens-no-s3-da-aws-com-node-js">
+                    <div class="img-content" >
+                        <img src="https://blog.rocketseat.com.br/content/images/2020/09/upload-de-imagens-no-s3-da-aws-com-node-js.png" alt="">
+                    </div>
+                    
+                     <div class="title-post">
+                         <p>Upload de imagens no S3 da AWS com Node.js</p>
+                     </div>
+ 
+                     <div class="info-post">
+                         <p class="autor">Por: Thiago Marinho</p>
+                         <p class="reading-time">10 Min de leitura </p>
+                     </div>
+                </div>
+
+                <div class="card" id="nextjs-novidades-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance/"> 
+                    <div class="img-content">
+                        <img src="https://blog.rocketseat.com.br/content/images/2020/11/capa_visao-geral-sobre-next-js-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance.jpg" alt="">
+                    </div>
+                    
+                     <div class="title-post">
+                         <p>Next.JS - Novidades na versão 10 e atualização do blog para melhorar a performance</p>
+                     </div>
+ 
+                     <div class="info-post">
+                         <p class="autor">Por: Thiago Marinho</p>
+                         <p class="reading-time">4 Min de leitura </p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="modal-overlay" >
+            <div class="modal">
+                <div class="close-model">
+                    <i class="material-icons">close</i>
+                </div>
+    
+                <div class="fullscreen">
+                    <i class="material-icons">fullscreen</i>
+                </div>
+
+                <iframe src="https://blog.rocketseat.com.br/" frameborder="0"></iframe>
+            </div>
+        </div>
+
+    {% endblock %}

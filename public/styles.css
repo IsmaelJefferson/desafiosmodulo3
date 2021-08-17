@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root{
+    --color-rocketseat: #8257e6;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background: #282a36;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 30px;
+    border-bottom: 1px solid rgba(56, 56, 56 , 0.5);
+}
+
+header div{
+    text-align: center;
+}
+
+header div a{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+header div a:hover{
+    color: var(--color-rocketseat);
+    transition: 300ms;
+}
+
+
+/** Styles pag Sobre**/
+
+#area-logo{
+    text-align: center;
+    border-bottom: 1px solid rgba(56, 56, 56 , 0.5);
+
+}
+
+#area-logo img{
+    border-radius: 50%;
+    border: 3px solid var(--color-rocketseat);
+    margin-top: 20px;
+}
+
+#area-logo h1{
+    color: var(--color-rocketseat);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+#area-logo p{
+    color: white;
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 400px;
+}
+
+#lista-tecnologias{
+    color: white;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;  
+}
+
+#lista-tecnologias ul{
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#lista-tecnologias ul a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-rocketseat);
+
+}
+
+#lista-tecnologias ul a:hover{
+    color: var(--color-rocketseat);
+    transition: 400ms;
+}
+
+#lista-tecnologias h4{
+    font-size: 22px;
+    line-height: 32px;
+}
+
+footer{
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+footer h4{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+footer a{
+    color: white;
+    padding: 10px;
+}
+
+footer a:hover{
+    color: var(--color-rocketseat);
+    font-size: 18px;
+    transition: 300ms;
+}
+
+/** Styles pag Conteúdos**/
+
+#Post-area h2{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#Post-area #cards-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.card{
+    width: 300px;
+    height: 450px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+    cursor: pointer;
+
+}
+
+.img-content img{
+    width: 130%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+}
+
+
+.title-post{
+    color: white;
+    width: 240px;
+    height: 300px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 5px;    
+
+}
+
+.autor{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 5px;
+}
+
+.reading-time{
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    margin-left: 5px;
+
+}
+
+/** Styles Modal**/
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 85%;
+    height: 80%;
+    margin: 70px auto;
+    text-align: center;
+    position: relative;
+}
+
+
+.modal iframe{
+    width: 99%;
+    height: 92%;
+    margin-top: 6vh;
+}
+
+.modal-overlay.actived{
+    opacity: 1;
+    visibility: visible;
+}
+
+.close-model{
+    color: black;
+    width: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+.fullscreen{
+    color: black;
+    width: 12px;
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    cursor: pointer;
+}
+
+.modal.fullscreen-actived{
+    width: 100%;
+    height: 100%;
+    margin:0;
+
+}
+
+
+/** Styles pag not-found**/
+
+#not-found{
+    font-size: 30px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;    
+}
+
+#not-found a{
+    text-decoration: none;
+    color: var(--color-rocketseat);
+}
+
+#not-found a:hover{
+    text-decoration: underline;
+}
