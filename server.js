@@ -10,7 +10,9 @@ server.use(express.static("public"));
 server.set("view engine" , "njk");
 
 nunjucks.configure("views" , {
-    express: server
+    express: server,
+    noCache: true,
+    autoescape:true
 })
 
 
@@ -45,6 +47,21 @@ server.get("/about", function(req, res){
     
     return res.render("about", {about} );
 })
+
+server.get("/post/:id" , function(req, res){
+
+    const id = req.params.id;
+
+    const post = posts.find(function(post){
+        return post.id == id; 
+    })
+    
+    if(!post){
+        return res.send("O post não foi encontrado");
+    }
+
+    return res.render("post" , {post})
+} )
 
 
 server.listen(5000 , function(){

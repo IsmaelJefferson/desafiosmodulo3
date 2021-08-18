@@ -260,3 +260,19 @@ footer a:hover{
 #not-found a:hover{
     text-decoration: underline;
 }
+
+
+/** Styles pag post**/
+
+.post-content{
+    max-width: 90%;
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.post-content iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+
+
+    {% block head %}
+    
+    
+        <title>Conteúdos - Rocketseat</title>
+        <link rel="icon" href="https://raw.githubusercontent.com/rocketseat-education/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    {% endblock%}
+    
+
+        
+    {% block content %}
+
+        <section id="Post-area">
+
+             <div class="post-content" id="{{post.id}}">
+                <div>
+                    <iframe src="https://blog.rocketseat.com.br/{{post.id}}" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+        </section>
+
+    {% endblock %}
